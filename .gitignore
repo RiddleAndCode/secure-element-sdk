@@ -18,13 +18,13 @@
 
 # Libraries
 *.lib
-*.a
+# *.a — we need to track the compiled go cryptoauthlib 
 *.la
 *.lo
 
 # Shared objects (inc. Windows DLLs)
 *.dll
-# *.so — we do need to track the cryptoauthlib shared object
+# *.so — we need to track the cryptoauthlib shared object
 *.so.*
 *.dylib
 
