@@ -2,7 +2,12 @@
 
 # shell script for installing the go cryptoauthlib
 
-echo $GOPATH
+# move the cryptoauth c library in place
+sudo cp ../bin/libcryptoauth.so /usr/lib
 
-cp -R pkg $GOPATH/.
+# move the dummy go sources in place
 cp -R src $GOPATH/.
+
+# move the go binary in place
+cp -R pkg $GOPATH/.
+
