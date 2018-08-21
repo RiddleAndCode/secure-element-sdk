@@ -24,7 +24,7 @@
 
 # Shared objects (inc. Windows DLLs)
 *.dll
-*.so
+# *.so — we do need to track the cryptoauthlib shared object
 *.so.*
 *.dylib
 
