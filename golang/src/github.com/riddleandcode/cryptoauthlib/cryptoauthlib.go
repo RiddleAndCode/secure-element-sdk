@@ -3,3 +3,6 @@
 package cryptoauthlib
 
 import "C"
+import (
+	"unsafe"
+)
