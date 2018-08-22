@@ -7,7 +7,7 @@ import (
 	"testing"
 
 	// import the go-cryptoauthlib package into element
-	element "github.com/riddleandcode/go-cryptoauthlib"
+	element "github.com/riddleandcode/cryptoauthlib"
 )
 
 func main(t *testing.T) {
