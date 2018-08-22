@@ -12,16 +12,21 @@ The SDK has the following structure
 The C libraries are available as shared objects and can be loaded into several languages. The corresponding header files are within the inc folder.
 
 ## Go wrapper
-Copy the library to a path contained in LDPATH of the system or to the golang folder if the command is run from there. Run the main.go sample code to see the sample code.
+Using the go wrapper comes with two installation steps
 
-'''
-cd golang
-cp ../lib/* .
-go run main.go
-'''
+- Copy the c library from the lib folder to a path contained in LDPATH of the system or to the golang folder if the command is run from there. 
+- Add the pkg to your GOPATH 
 
-The concept is shown in the main.go example file can be extended and move to your code.
->Note: the wrapper.h file has to be located in the same directory of the main.go file.
+The golang/install.sh script just executes these two steps as shown below
+```go
+sudo cp ../bin/libcryptoauth.so /usr/lib
+cp -R src $GOPATH/.
+cp -R pkg $GOPATH/.
+```
+
+Thereafter, the library can be utilized as needed. 
+The concept of the provided Go API is shown in the golang/random_example.go example file.
+
 
 ### Example
 
