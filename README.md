@@ -2,6 +2,8 @@
 
 This SDK includes precompiled cryptoauth libraries, header files, and wrapper code for several languages to connect to the RIDDLE&CODE Secure Element via the I²C protocol on various devices.
 
+A generic overview on how to integrate the Secure Element to various boards can be found [here](https://github.com/RiddleAndCode/secure-element-sdk/wiki/Riddle&Code-Secure-Element).
+
 The SDK has the following structure
 
 - inc           The include files needed to utilize the library.
